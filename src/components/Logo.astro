@@ -1,9 +1,11 @@
 ---
 // import the Image component and the image
 import { Image } from 'astro:assets';
-import logo from '../assets/xnb.png';
+import logo from '../assets/XNB.svg';
 const descriptionOfLogo ="A simple logo showing the letters 'XNB'"
+const colorHex = "#a90875"
+const logoStyleDefinition = "filter:brightness(0)saturate(100%)invert(18%)sepia(37%)saturate(4861%)hue-rotate(298deg)brightness(100%)contrast(118%);width:15vh;height:15vh;"
 ---
 <a href="/" class="logoContainer">
-    <Image style="width:15vh;height:15vh;" src={logo} alt={descriptionOfLogo}></Image>
+    <Image style={logoStyleDefinition} src={logo} alt={descriptionOfLogo}></Image>
 </a>
