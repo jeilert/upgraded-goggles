@@ -57,6 +57,15 @@ h1 {
   display: unset;
 }
 
+header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.menuContainer {
+  width: 80vw;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;

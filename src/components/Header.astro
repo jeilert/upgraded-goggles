@@ -1,11 +1,15 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Menu from '../components/Menu.astro'
+import Logo from './Logo.astro';
 ---
 
 <nav>
     <header>
-        <Menu />
-        <Navigation />
+        <div class="menuContainer">
+            <Menu />
+            <Navigation />
+        </div>
+        <Logo />
     </header>
 </nav>

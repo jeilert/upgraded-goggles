@@ -1,0 +1,9 @@
+---
+// import the Image component and the image
+import { Image } from 'astro:assets';
+import logo from '../assets/xnb.png';
+const descriptionOfLogo ="A simple logo showing the letters 'XNB'"
+---
+<a href="/" class="logoContainer">
+    <Image style="width:15vh;height:15vh;" src={logo} alt={descriptionOfLogo}></Image>
+</a>
